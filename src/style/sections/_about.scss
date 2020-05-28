@@ -74,6 +74,29 @@
           }
         }
       }
+
+      &-list {
+        text-align: left;
+        font-size: $small-font-size;
+        list-style-type: none;
+        margin: 0;
+        padding: 1rem 0 3rem;
+      }
+
+      &-listitem {
+        background-color: black;
+        opacity: 0.5;
+        padding: 1rem 1rem 1rem 1rem;
+        margin: 0 0 0.5rem 0;
+        border-radius: 5px;
+        display: inline-block;
+        white-space: nowrap;
+
+        @include respond(tab-port-sm) {
+          display: block;
+          white-space: normal;
+        }
+      }
     }
   }
 }
